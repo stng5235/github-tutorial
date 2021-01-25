@@ -1,26 +1,17 @@
-Working directory --> git init, git status, git add . , git diff doc1.txt
-Staging area --> git commit -m "commit message", git log
-Local repository back to Staging area - git checkout doc1.txt
-remote repository- git remote add origin
-git push -u origin master
+1. git init (set up working directory)
+2. git status (check modified items)
+3. git checkout doc1.txt (revert back to previous version)
+4. git add (add to staging area), git rm --cached -r . (remove from staging area), git diff doc1.txt (check differences)
+5. git commit -m "commit message" (commit to local repository), git log (check log history)
+6. git remote add origin, git push -u origin master (from local repository to remote repository)
+7. git clone https://github.com/austinzheng/swift-2048.git (clone other people repository to local repository)
+8. git branch alien-plot (create a branch named alien-plot)
+9. git branch (check how many branch you have)
+10. git checkout alien-plot (switch to alien-plot)
+11. git merge alien-plot (merge alien-plot changes to master branch, must git checkout master first)
 
+notes:
 touch .gitignore
-open
-git rm --cached -r .
-*.txt, # for comment in .gitignore
-
-https://github.com/fullstackio/FlappySwift
-
-git clone https://github.com/austinzheng/swift-2048.git
-git branch alien-plot
-git branch to check branch you have
-git checkout alien-plot
-git merge alien-plot
-:q!
-
-test
-create a repository in github, story2 master branch doc1.txt
-branch experimental
-switch to experimental branch edit doc1.txt
-switch back master branch create pull request
-review and merge
+open .gitignore
+*.txt (exclude all txt files), # for comment in .gitignore
+:q! to quit and save vim editor or esc key follow by :x then hit enter 
